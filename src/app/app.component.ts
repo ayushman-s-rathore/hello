@@ -11,7 +11,7 @@ export class AppComponent {
   constructor(private http: HttpClient){}
   
   fetchContent(){
-    this.http.get('http://localhost:8080/helloWorld').subscribe(data=>{
+    this.http.get('/api/v1/hello').subscribe(data=>{
       console.log(data);
     })
   }
